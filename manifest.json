@@ -1,0 +1,26 @@
+{
+  "name": "Jvedio",
+  "description": "This is a Chrome Extension of Jvedio(Jvedio is a local video management software that supports scanning local videos and importing the software to establish a video library, Extract the unique identification code of the video, automatically classify the video, Add tags to manage videos, use artificial intelligence to identify actors, support translation information, Capture video pictures based on FFmpeg, smooth and beautiful application software on Window desktop)",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage", "activeTab", "scripting","tabs", 
+    "cookies",
+    "*://*.baidu.com"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/Jvedio16.png",
+      "32": "/images/Jvedio32.png",
+      "48": "/images/Jvedio48.png",
+      "128": "/images/Jvedio128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/Jvedio16.png",
+    "32": "/images/Jvedio32.png",
+    "48": "/images/Jvedio48.png",
+    "128": "/images/Jvedio128.png"
+  },
+  "options_page": "options.html"
+}
