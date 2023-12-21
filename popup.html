@@ -1,69 +1,86 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <html>
+
   <head>
     <link rel="stylesheet" href="css/popup.css">
     <script src="js/popup.js"></script>
   </head>
+
+  
+
   <body>
     <!-- 主界面 -->
     <div id="maindiv">
 
+      <div id="dialog"  >
+        已复制
+      </div>
+
+      <p style="top: 40px; position: absolute; color: white;margin-left: 20px;">版本1.0：支持 bus：有码、无码、欧美</p>
 
 
       <!-- 标题栏 -->
-    <div style="background-color: #22252A;height: 40px; width: 100%;" >
-      <div style="margin: 10px;float: left;">
-        <img height="20" src="images/Jvedio32.png"/>
-        <img  height="20" width="auto" src="images/Title.png"/>
+      <div style="background-color: #22252A;height: 40px; width: 100%;">
+        <div style="margin: 10px;float: left;">
+          <img height="20" src="images/Jvedio32.png" />
+          <img height="20" width="auto" src="images/Title.png" />
+        </div>
+
+        <button id="close" style="float: right;margin: 10px;text-align:
+          center;vertical-align: middle;">
+          <svg style="margin-top: 4px;" t="1614838060701" class="icon"
+            viewBox="0 0 1024 1024" version="1.1"
+            xmlns="http://www.w3.org/2000/svg" p-id="8757" width="16"
+            height="16">
+            <path d="M574.55 522.35L904.4 192.5c16.65-16.65 16.65-44.1
+              0-60.75l-1.8-1.8c-16.65-16.65-44.1-16.65-60.75 0L512
+              460.25l-329.85-330.3c-16.65-16.65-44.1-16.65-60.75 0l-1.8
+              1.8c-17.1
+              16.65-17.1 44.1 0 60.75l329.85 329.85L119.6 852.2c-16.65
+              16.65-16.65
+              44.1 0 60.75l1.8 1.8c16.65 16.65 44.1 16.65 60.75 0L512
+              584.9l329.85
+              329.85c16.65 16.65 44.1 16.65 60.75 0l1.8-1.8c16.65-16.65
+              16.65-44.1
+              0-60.75L574.55 522.35z" p-id="8758" fill="#cdcdcd">
+
+            </path>
+          </svg>
+        </button>
       </div>
 
-      <div id="close" style="float: right;margin: 10px;text-align: center;vertical-align: middle;">
-        <svg style="margin-top: 4px;"   t="1614838060701" class="icon" viewBox="0 0 1024 1024" version="1.1"
-        xmlns="http://www.w3.org/2000/svg" p-id="8757"
-        width="16" height="16">
-        <path d="M574.55 522.35L904.4 192.5c16.65-16.65 16.65-44.1
-          0-60.75l-1.8-1.8c-16.65-16.65-44.1-16.65-60.75 0L512
-          460.25l-329.85-330.3c-16.65-16.65-44.1-16.65-60.75 0l-1.8 1.8c-17.1
-          16.65-17.1 44.1 0 60.75l329.85 329.85L119.6 852.2c-16.65 16.65-16.65
-          44.1 0 60.75l1.8 1.8c16.65 16.65 44.1 16.65 60.75 0L512 584.9l329.85
-          329.85c16.65 16.65 44.1 16.65 60.75 0l1.8-1.8c16.65-16.65 16.65-44.1
-          0-60.75L574.55 522.35z" p-id="8758" fill="#cdcdcd">
 
-        </path>
-      </svg>
-    </button>
+      <!-- 内容 -->
+      <div id="content">
+
+        
+       
+        <!-- <button id="saveinfo" class="btn">保存影片信息</button> -->
+        <button id="saveimage" class="btn">下载所有图片</button>
+        <button  id="copymagnets" class="btn">复制所有磁力</button>
+        <!-- <button  id="copymagnets" class="btn">复制高清中文磁力</button> -->
+       
+
+        <div style="color: white;display: none;" id='sourcecode'>Injecting
+          Script....</div>
+        <div id="info" style=" height: 100%; color: white;overflow-x: hidden;overflow-y:
+          auto;">
+
+
+          <!-- <p>123</p>
+          <p>123</p> -->
+
+
+
+        </div>
+
+
+
+
+
       </div>
     </div>
-
-
-    <!-- 内容 -->
-    <div id="content" >
-      <div class="nav" style="display: none;">
-        <a href="#Bus">Bus</a>
-        <a href="#DB">DB</a>
-        <a href="#FC2">FC2</a>
-        <a href="#Library">Library</a>
-    </div>
-    <div class="sh" style="display: none;">
-        <div id="Bus">Bus</div>
-        <div id="DB">DB</div>
-        <div id="FC2">FC2</div>
-        <div id="Library">Library</div>
-    </div>
-
-
-
-    <button id="saveinfo" class="btn">保存影片信息</button>
-    <button id="saveimage" class="btn">下载所有图片</button>
-
-    <div id='message'>Injecting Script....</div>
-
-
-      
-
-
-    </div>
-  </div>
   </body>
+
 </html>
